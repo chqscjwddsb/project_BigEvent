@@ -1,0 +1,45 @@
+.iconfont{
+    margin-right: 8px !important;
+}
+
+iframe{
+    width: 100%;
+    height: 100%;
+}
+.layui-body{
+    overflow: hidden;
+}
+.layui-footer{
+    text-align: center;
+}
+
+.xxxxx{
+    position: relative;
+}
+.default-img-lf{
+    width: 31px;
+    height: 31px;
+    line-height: 31px;
+    background-color: pink;
+    text-align: center;
+    position: absolute;
+    left: 79px;
+    top: 16px;
+    border-radius: 30px;
+}
+
+#welcome{
+    margin-right: -106px;
+}
+
+.default-img-rt{
+    width: 31px;
+    height: 31px;
+    line-height: 31px;
+    background-color: pink;
+    text-align: center;
+    position: absolute;
+    left: -23px;
+    top: 15px;
+    border-radius: 30px;
+}

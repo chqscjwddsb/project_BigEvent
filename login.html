@@ -29,13 +29,13 @@
                 </div>
                 <button class="layui-btn layui-btn-fluid" lay-submit lay-filter="formDemo">登录</button>
             </form>
-            <div class="link-regist fr"><a href="javascript:;" class="">去注册</a></div>
+            <div class="link-regist fr"><a href="javascript:;" class="registBtn">去注册</a></div>
         </div>
         <div class="regist">
             <form class="layui-form">
                 <i class="layui-icon layui-icon-username" style="font-size: 20px; color: black;"></i>
                 <div class="layui-form-item">
-                    <input type="text" name="username" placeholder="请输入账号" autocomplete="off" class="layui-input" lay-verify="required">
+                    <input type="text" name="username" placeholder="请输入账号" autocomplete="off" class="layui-input" lay-verify="required|name">
                 </div>
                 <i class="layui-icon layui-icon-password" style="font-size: 20px; color: black;"></i>
                 <div class="layui-form-item">
@@ -47,13 +47,13 @@
                 </div>
                 <button class="layui-btn layui-btn-fluid" lay-submit lay-filter="formDemo">注册</button>
             </form>
-            <div class="link-login fr"><a href="javascript:;" class="">去登录</a></div>
+            <div class="link-login fr"><a href="javascript:;" class="loginBtn">去登录</a></div>
         </div>
     </div>
 </body>
 <script src="./assets/lib/layui/layui.all.js"></script>
 <script src="./assets/lib/jquery.js"></script>
-<script src="./assets/js/dealUrl.js"></script>
+<script src="./assets/js/baseApi.js"></script>
 <script src="./assets/js/login.js"></script>
 
 </html>

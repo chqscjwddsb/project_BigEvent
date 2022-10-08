@@ -20,12 +20,13 @@ $(function () {
             if (value !== password) {
                 return '两次密码不同';
             }
-        }
+        },
+        name:[(/^[a-zA-Z0-9_]{1,}$/),'不可以是汉字哦,由数字,字母,下滑线组成']
     })
     // 提交注册账号
     $(".regist .layui-form").on('submit', function (e) {
         e.preventDefault();
-        var urldata = 'api/reguser';
+        var urldata = '/api/reguser';
         var data = $(this).serialize();
         $.ajax({
             type: 'post',
@@ -35,23 +36,22 @@ $(function () {
                 if (res.status !== 0) {
                     return layer.msg(res.message);
                 }
-                layer.msg(res.message);
-                $('.link-login').click();
+                layer.msg(res.message+'快来登录吧');
+                $('.loginBtn').click();
             }
         })
     })
     // 登录账号
     $(".login .layui-form").on('submit', function (e) {
+        e.preventDefault();
         var urldata = '/api/login';
         var data = $(this).serialize();
-        e.preventDefault();
         $.ajax({
             type: "post",
             url: urldata,
             data: data,
             success: function (res) {
-                console.log(res);
-
+                // console.log(res);
                 if (res.status !== 0) {
                     return layer.msg('账号或者密码错误');
                 }

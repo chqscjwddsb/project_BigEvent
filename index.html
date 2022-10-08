@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>layout 管理系统大布局 - Layui</title>
+    <link rel="stylesheet" href="./assets/lib/layui/css/layui.css">
+    <link rel="stylesheet" href="./assets/fonts/iconfont.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+</head>
+
+<body>
+    <div class="layui-layout layui-layout-admin">
+        <div class="layui-header">
+            <div class="layui-logo layui-hide-xs layui-bg-black">
+                <!--用户保存过后的图片  -->
+                <img src="//tva1.sinaimg.cn/crop.0.0.118.118.180/5db11ff4gw1e77d3nqrv8j203b03cweg.jpg"
+                    class="layui-nav-img">
+                <!-- 刚开始登录时的初始化图片 -->
+                <div class="default-img-lf">A</div>
+                <div id="welcome"></div>
+
+            </div>
+
+
+            <!-- 头部区域（可配合layui 已有的水平导航） -->
+            <ul class="layui-nav layui-layout-left">
+                <li class="layui-nav-item">
+                    <img src="./assets/images/logo.png" alt="" style="width: 100%; background-color: black;">
+                </li>
+
+
+            </ul>
+            <ul class="layui-nav layui-layout-right">
+                <li class="layui-nav-item layui-hide layui-show-md-inline-block  xxxxx">
+                    <a href="javascript:;">
+                        <!-- 用户保存过后的图片 -->
+                        <img src="//tva1.sinaimg.cn/crop.0.0.118.118.180/5db11ff4gw1e77d3nqrv8j203b03cweg.jpg"
+                            class="layui-nav-img">
+                        <!-- 用户初始化图片 -->
+                        <div class="default-img-rt">A</div>
+                        个人中心
+                    </a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="">基本资料</a></dd>
+                        <dd><a href="">更换头像</a></dd>
+                        <dd><a href="">重置密码</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">
+                        <i class="iconfont icon-tuichu"></i>
+                        <i class="layui-icon  logOut">退出</i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="layui-side layui-bg-black">
+            <div class="layui-side-scroll">
+                <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+                <ul class="layui-nav layui-nav-tree" lay-shrink="all">
+                    <li class="layui-nav-item layui-this"><a href="./home/dashboard.html" target="fm">首页</a></li>
+                    <li class="layui-nav-item">
+                        <a class="" href="javascript:;">文章管理</a>
+                        <dl class="layui-nav-child">
+                            <dd><a href=""><i class="iconfont icon-16"></i>文章分类</a></dd>
+                            <dd><a href="javascript:;"><i class="iconfont icon-16"></i>文章列表</a></dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="javascript:;">个人中心</a>
+                        <dl class="layui-nav-child">
+                            <dd><a href="javascript:;"><i class="iconfont icon-user"></i>基本资料</a></dd>
+                            <dd><a href="javascript:;"><i class="iconfont icon-user"></i>更换头像</a></dd>
+                            <dd><a href="javascript:;"><i class="iconfont icon-user"></i>重置密码</a></dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="layui-body">
+            <!-- 内容主体区域 -->
+
+            <iframe src="./home/dashboard.html" name="fm" frameborder="0"></iframe>
+
+        </div>
+
+        <div class="layui-footer">
+            <!-- 底部固定区域 -->
+            黑马
+        </div>
+    </div>
+    <script src="./assets/lib/layui/layui.all.js"></script>
+
+    <script src="./assets/lib/jquery.js"></script>
+
+    <script src="./assets/js/baseApi.js"></script>
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
